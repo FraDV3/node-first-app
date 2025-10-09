@@ -6,7 +6,7 @@ const requestHandler = (req, res) => {
 
   if (url === '/') {
     res.write('<html>');
-    res.write('<head><title>My First Page</title></head>');
+    res.write('<head><title>My Node 1 First Page</title></head>');
     res.write(
       '<body><form action="/message" method="POST"><input type="text" name="message" /><button type="submit">Submit</button></form></body>'
     );
@@ -21,8 +21,8 @@ const requestHandler = (req, res) => {
     });
 
     return req.on('end', () => {
-      const parseBody = Buffer.concat(body).toString();
-      const message = parseBody.split('=')[1];
+      const parsedBody = Buffer.concat(body).toString();
+      const message = parsedBody.split('=')[1];
       fs.writeFile('message.txt', message, (err) => {
         res.statusCode = 302;
         res.setHeader('Location', '/');
