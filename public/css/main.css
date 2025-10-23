@@ -23,17 +23,6 @@ form {
   text-align: center;
 }
 
-.product-media img {
-  max-width: min(600px, 100%); /* cap width and be responsive */
-  max-height: 70vh;            /* don’t exceed viewport height */
-  width: auto;
-  height: auto;
-  object-fit: contain;         /* no crop; may letterbox */
-  display: block;
-  margin: 2rem auto;
-  border-radius: 6px;
-}
-
 .main-header {
   width: 100%;
   height: 3.5rem;
