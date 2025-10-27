@@ -12,6 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "@prettier/plugin-pug": "^3.4.2",
+    "@types/node": "^24.9.1",
+    "@types/sequelize": "^4.28.20",
     "nodemon": "^3.1.10",
     "prettier": "^3.6.2"
   },
