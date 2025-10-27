@@ -47,9 +47,9 @@ module.exports = class Cart {
       const updatedCart = { ...JSON.parse(fileContent) };
 
       // If cart doesn't have products yet, stop early
-      if (!updatedCart.products || updatedCart.products.length === 0) {
-        return;
-      }
+      // if (!updatedCart.products || updatedCart.products.length === 0) {
+      //   return;
+      // }
 
       const product = updatedCart.products.find((prod) => prod.id === id);
       if (!product) {
